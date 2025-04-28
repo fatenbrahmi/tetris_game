@@ -2,13 +2,23 @@
   "name": "devops_project_tetris_game",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "supertest": "^7.1.0",
+    "util": "^0.12.5"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFiles": ["./jest.setup.js"]
   }
 }
